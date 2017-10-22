@@ -142,7 +142,7 @@ window.onload = function () {
         list.onclick = function () {
           var guess = (this.innerHTML);
           this.setAttribute("class", "active");
-          this.onclick = null;
+          this.innerHTML = "";
           for (var i = 0; i < word.length; i++) {
             if (word[i] === guess) {
               guesses[i].innerHTML = guess;
